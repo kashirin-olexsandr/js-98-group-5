@@ -17,27 +17,39 @@
 //~ значення '1', то у змінну result запишемо 'зима', якщо має значення
 //~ '2' - 'весна' і так далі. Розв'яжіть завдання через switch-case.
 
-const num = "2";
-let result = "";
+// const num = "2";
+// let result = "";
 
-switch (Number(num)) {
-  case 1:
-    result = "зима";
-    break;
-  case 2:
-    result = "весна";
-    break;
-  case 3:
-    result = "літо";
-    break;
-  case 4:
-    result = "осінь";
+// switch (Number(num)) {
+//   case 1:
+//     result = "зима";
+//     break;
+//   case 2:
+//     result = "весна";
+//     break;
+//   case 3:
+//     result = "літо";
+//     break;
+//   case 4:
+//     result = "осінь";
 
-    break;
+//     break;
 
-  default:
-    result = "invalid";
-    break;
+//   default:
+//     result = "invalid";
+//     break;
+// }
+
+// // console.log(result);
+
+//~ Створи функцію logNumbers яка приймає число і логує від 0 і до цього числа
+//~ скористаємося циклом while
+function logNumbers(num) {
+  let i = 0;
+  while (i <= num) {
+    console.log((i = i + 1));
+
+    // return i;
+  }
 }
-
-// console.log(result);
+console.log(logNumbers(20));
