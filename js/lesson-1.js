@@ -40,4 +40,4 @@ switch (Number(num)) {
     break;
 }
 
-console.log(result);
+// console.log(result);
