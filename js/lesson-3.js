@@ -104,3 +104,12 @@ const users = [
 //   }, []);
 // };
 // console.log(getUsersWithGender(users, "male"));
+
+// Масив імен (поле name) людей, відсортованих залежно кількості їх друзів (поле friends)
+// console.log(getNamesSortedByFriendsCount(users));
+const getNamesSortedByFriendsCount = (users) => {
+  return users
+    .toSorted((a, b) => b.friends.length - a.friends.length)
+    .map((user) => user.name);
+};
+console.log(getNamesSortedByFriendsCount(users));
