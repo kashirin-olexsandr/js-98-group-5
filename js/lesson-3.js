@@ -119,39 +119,42 @@ const getNamesSortedByFriendsCount = (users) => {
 //Оголоси приватні властивості #login #email,
 //доступ до яких зроби через геттер та сеттер login email
 
-
 class Client {
-   #login;
-   #email;
-   constructor(login, email) {
+  #login;
+  #email;
+  constructor(login, email) {
     this.#email = email;
     this.#login = login;
-   }
+  }
 
-   get email() {
+  get email() {
     return this.#email;
-   }
+  }
 
-   set email(newEmail) {
-     this.#email = newEmail;
-   }
+  set email(newEmail) {
+    this.#email = newEmail;
+  }
 
-   get login() {
+  get login() {
     return this.#login;
-   }
+  }
 
-   set login(newLogin) {
+  set login(newLogin) {
     this.#login = newLogin;
-   }
-   
-}
-const Vasya = new Client("Vasya", "vasya@gmail.com");
-console.log(typeof Vasya);
-console.log(Vasya.login);
-console.log(Vasya.login = "Tamara");
-console.log();
+  }
+} // Щоразу передавати ім'я шефа. //Напишіть функцію makeShef(shefName), яка повертає функцію //makeDish(dish), що пам'ятає ім'я шефа під час її виклику
+// const Vasya = new Client("Vasya", "vasya@gmail.com");
+// console.log(typeof Vasya);
+// console.log(Vasya.login);
+// console.log(Vasya.login = "Tamara");
+// console.log();
 
-
-
-
-
+//Виконай рефакторинг makeDish так, щоб не потрібно було
+const makeShef = (shefName) => {
+  let sum = 0;
+  return (dish) => `${shefName} is cooking ${dish}`;
+};
+const Mango = makeShef("Mango");
+// makeDish("Mango", "apple pie");
+// makeDish("Poly", "muffins");
+console.log(Mango("muffins"));
