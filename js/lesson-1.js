@@ -44,12 +44,15 @@
 
 //~ Створи функцію logNumbers яка приймає число і логує від 0 і до цього числа
 //~ скористаємося циклом while
-function logNumbers(num) {
-  let i = 0;
-  while (i <= num) {
-    console.log((i = i + 1));
+// function logNumbers(num) {
+//   let i = 0;
+//   while (i <= num) {
+//     console.log((i = i + 1));
 
-    // return i;
-  }
-}
-console.log(logNumbers(20));
+//     // return i;
+//   }
+// }
+// console.log(logNumbers(20));
+
+// Отримати масив імен користувачів за статтю (поле gender)
+// console.log(getUsersWithGender(users, 'male')); // [ 'Moore Hensley', 'Ross Vazquez', 'Carey Barr', 'Blackburn Dotson' ]
