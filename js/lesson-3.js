@@ -112,4 +112,46 @@ const getNamesSortedByFriendsCount = (users) => {
     .toSorted((a, b) => b.friends.length - a.friends.length)
     .map((user) => user.name);
 };
-console.log(getNamesSortedByFriendsCount(users));
+// console.log(getNamesSortedByFriendsCount(users));
+
+//! 11. Напиши клас Client який створює об'єкт
+//з ​​властивостями login email
+//Оголоси приватні властивості #login #email,
+//доступ до яких зроби через геттер та сеттер login email
+
+
+class Client {
+   #login;
+   #email;
+   constructor(login, email) {
+    this.#email = email;
+    this.#login = login;
+   }
+
+   get email() {
+    return this.#email;
+   }
+
+   set email(newEmail) {
+     this.#email = newEmail;
+   }
+
+   get login() {
+    return this.#login;
+   }
+
+   set login(newLogin) {
+    this.#login = newLogin;
+   }
+   
+}
+const Vasya = new Client("Vasya", "vasya@gmail.com");
+console.log(typeof Vasya);
+console.log(Vasya.login);
+console.log(Vasya.login = "Tamara");
+console.log();
+
+
+
+
+
