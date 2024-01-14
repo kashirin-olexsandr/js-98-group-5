@@ -72,6 +72,19 @@ function logNumbers(min, max) {
   }
   return sum;
 }
+
+console.log(logNumbers(20));
+
+function calculateTotal(number) {
+  let sum = 0;
+  let i = 1;
+  while (i <= number) {
+    sum += i;
+    i++;
+  }
+  return sum;
+}
+console.log(calculateTotal(3));
 console.log(logNumbers(10, 20));
 
 // Отримати масив імен користувачів за статтю (поле gender)
