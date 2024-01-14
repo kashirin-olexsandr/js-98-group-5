@@ -1,0 +1,53 @@
+body {
+    background-color: aqua;
+  }
+
+  ul,
+  ol {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin-top: 0;
+  }
+
+  .container {
+    width: 758px;
+    margin: 0 auto;
+  }
+
+  .header-form {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  #task-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .task-list-item {
+    /* width: calc((100% - 60px) / 4); */
+    padding: 40px;
+    border: 1px solid grey;
+    border-radius: 8px;
+
+    text-align: center;
+  }
+
+  .task-list-item:hover {
+    box-shadow: 0px 90px 55px -3px rgba(0, 0, 0, 0.75);
+  }
+
+  .task-list-item button {
+    padding: 5px;
+  }
