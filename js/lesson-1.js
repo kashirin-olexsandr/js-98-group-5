@@ -54,6 +54,7 @@
 // }
 // console.log(logNumbers(20));
 
+
 //~ Створи функцію logNumbers яка приймає min і max
 //~і виводить у консоль
 //~ числа від max до min за спаданням
@@ -72,3 +73,6 @@ function logNumbers(min, max) {
   return sum;
 }
 console.log(logNumbers(10, 20));
+
+// Отримати масив імен користувачів за статтю (поле gender)
+// console.log(getUsersWithGender(users, 'male')); // [ 'Moore Hensley', 'Ross Vazquez', 'Carey Barr', 'Blackburn Dotson' ]
