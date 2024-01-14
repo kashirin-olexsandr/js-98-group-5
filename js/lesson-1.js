@@ -54,5 +54,25 @@
 // }
 // console.log(logNumbers(20));
 
+
+//~ Створи функцію logNumbers яка приймає min і max
+//~і виводить у консоль
+//~ числа від max до min за спаданням
+//~ Додайте усі парні числа від min до max
+// Hello world
+
+function logNumbers(min, max) {
+  let sum = 0;
+
+  for (let i = max; i >= min; i--) {
+    console.log(i);
+    if (i % 2 === 0) {
+      sum += i;
+    }
+  }
+  return sum;
+}
+console.log(logNumbers(10, 20));
+
 // Отримати масив імен користувачів за статтю (поле gender)
 // console.log(getUsersWithGender(users, 'male')); // [ 'Moore Hensley', 'Ross Vazquez', 'Carey Barr', 'Blackburn Dotson' ]
